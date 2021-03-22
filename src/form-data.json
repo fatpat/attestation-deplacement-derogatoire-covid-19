@@ -65,21 +65,22 @@
       "type": "date",
       "contentType": "creationDate",
       "label": "Date de création",
-      "isHidden": true
+      "pattern": "^([0][1-9]|[1-2][0-9]|30|31)\/([0][1-9]|10|11|12)\/([12][90][0-9][0-9])",
+      "autocomplete": ""
     },
     {
       "key": "creationHour",
       "type": "time",
       "contentType": "creationHour",
       "label": "Heure de création",
-      "isHidden": true
+      "autocomplete": ""
     },
     {
       "key": "datesortie",
       "type": "date",
       "contentType": "datesortie",
       "label": "Date de sortie",
-      "pattern": "^([0][1-9]|[1-2][0-9]|30|31)\/([0][1-9]|10|11|12)\/(19[0-9][0-9]|20[0-1][0-9]|2021)",
+      "pattern": "^([0][1-9]|[1-2][0-9]|30|31)\/([0][1-9]|10|11|12)\/([12][90][0-9][0-9])",
       "autocomplete": ""
     },
     {
@@ -96,27 +97,27 @@
         {
           "code": "travail",
           "type":"checkbox",
-          "label": "<strong> Activité professionnelle, enseignement et formation, mission d’intérêt général </strong> <br>  - Déplacements entre le domicile et le lieu de travail ou d’enseignement ou de formation.<br> - Déplacements professionnels ne pouvant être différés, livraisons.<br> - Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle.<br> - Déplacements liés à des missions d’intérêt général sur demande de l’autorité administrative."
+          "label": "<strong> 1. Travail</strong> ;"
         },
         {
           "code": "sante",
           "type":"checkbox",
-          "label": "<strong> Santé (consultation et soins)</strong> <br> - Déplacements pour des consultations, examens, actes de prévention (dont vaccination) et soins ne pouvant être assurés à distance ou pour l’achat de produits de santé."
+          "label": "<strong> 2. Santé </strong> ;"
         },
         {
           "code": "famille",
           "type":"checkbox",
-          "label": "<strong> Motif familial impérieux, assistance aux personnes vulnérables, garde d’enfants, situation de handicap </strong> <br> - Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou précaires ou pour la garde d’enfants. <br> - Déplacements des personnes en situation de handicap et de leur accompagnant. "
+          "label": "<strong>  3. Famille </strong> ;"
         },
         {
           "code": "convocation_demarches",
           "type":"checkbox",
-          "label": "<strong> Convocation judiciaire ou administrative, démarches ne pouvant être menées à distance </strong> <br> - Déplacements pour répondre à une convocation judiciaire ou administrative, pour se rendre dans un service public ou chez un professionnel du droit, pour un acte ou une démarche qui ne peut être réalisé à distance."
+          "label": "<strong> Convocation judiciaire ou administrative</strong> ;"
         },
         {
           "code": "animaux",
           "type":"checkbox",
-          "label": "<strong> Animaux de compagnie, le soir et la nuit </strong> <br> - Déplacements brefs pour les besoins des animaux de compagnie (dans un rayon de 1 kilomètre autour du domicile)."
+          "label": "<strong> Animaux</strong> ;"
         }
       ]
     },
@@ -127,38 +128,38 @@
         {
           "code": "travail",
           "type":"checkbox",
-          "label": "<strong> Activité professionnelle, enseignement et formation, mission d’intérêt général </strong> <br>  - Déplacements entre le domicile et le lieu de travail ou d’enseignement ou de formation.<br> - Déplacements professionnels ne pouvant être différés, livraisons.<br> - Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle.<br> - Déplacements liés à des missions d’intérêt général sur demande de l’autorité administrative."
+          "label": "<strong> Travail </strong> ;"
         },
         {
           "code": "sante",
           "type":"checkbox",
-          "label": "<strong> Santé (consultation et soins)</strong> <br> - Déplacements pour des consultations, examens, actes de prévention (dont vaccination) et soins ne pouvant être assurés à distance ou pour l’achat de produits de santé.</li>"
+          "label": "<strong> Santé </strong> ;"
         },
         {
           "code": "famille",
           "type":"checkbox",
-          "label": "<strong> Motif familial impérieux, assistance aux personnes vulnérables, garde d’enfants, situation de handicap </strong> <br> - Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou précaires ou pour la garde d’enfants <br> - Déplacements des personnes en situation de handicap et de leur accompagnant "
+          "label": "<strong> Famille </strong> ;"
         },
         {
           "code": "convocation_demarches",
           "type":"checkbox",
-          "label": "<strong> Convocation judiciaire ou administrative, démarches ne pouvant être menées à distance </strong> <br> - Déplacements pour répondre à une convocation judiciaire ou administrative, pour se rendre dans un service public ou chez un professionnel du droit, pour un acte ou une démarche qui ne peut être réalisé à distance."
+          "label": "<strong> Convocation judiciaire ou administrative </strong> ;"
         },
         {
           "code": "demenagement",
           "type":"checkbox",
-          "label": "<strong> Déménagement </strong> <br> - Déplacements liés à un déménagement résultant d’un changement de domicile.<br> - Déplacements indispensables à l’acquisition ou à la location d’une résidence principale, ne pouvant être différés."
+          "label": "<strong> Déménagement </strong> ;"
         },
         {
           "code": "achats_culte_culturel",
           "type":"checkbox",
-          "label": " <strong> Achats, établissements culturels ou lieux de culte <i>(au sein de mon département <a class=\"footnote\" href=\"#footnote2\">[1]</a>)</i> </strong> <br> - Déplacements pour effectuer des achats de première nécessité, pour les retraits de commandes, ou pour bénéficier de prestations de service.<br> - Déplacements pour se rendre dans un établissement culturel ouvert ou un lieu de culte."
+          "label": " <strong> Courses <i>(au sein de mon département</i> </strong> ;"
         },
         {
           "code": "sport",
           "type":"checkbox",
-          "label": "<strong> Activité physique, de plein air, promenade <i>(dans un rayon de 10 kilomètres autour de votre domicile)</i> </strong> <br> - Déplacements liés à la promenade, à l’activité physique individuelle, à l’activité de plein air, aux besoins des animaux de compagnie. <br> <i><u> Vous ne devez remplir l’attestation pour ce motif que si vous ne pouvez présenter un justificatif de domicile. </u></i>"
-        },
+          "label": "<strong> Sport <i>(dans un rayon de 10 kilomètres autour de votre domicile)</i> </strong> ;"
+        }
       ]
     }
   ]

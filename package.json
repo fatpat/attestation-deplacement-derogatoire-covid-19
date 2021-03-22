@@ -24,13 +24,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lab-mi/attestation-deplacement-derogatoire-covid-19"
+    "url": "git+https://github.com/fatpat/attestation-deplacement-derogatoire-covid-19"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lab-mi/attestation-deplacement-derogatoire-covid-19/issues"
+    "url": "https://github.com/fatpat/attestation-deplacement-derogatoire-covid-19/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",

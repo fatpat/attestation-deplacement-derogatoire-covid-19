@@ -26,10 +26,6 @@ export async function generatePdf (profile, reasons, context) {
   }
 
   const creationInstant = new Date()
-  const creationDate = creationInstant.toLocaleDateString('fr-FR')
-  const creationHour = creationInstant
-    .toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })
-    .replace(':', 'h')
 
   const {
     lastname,
@@ -43,7 +39,7 @@ export async function generatePdf (profile, reasons, context) {
   } = profile
 
   const data = [
-    `Cree le: ${creationDate} a ${creationHour}`,
+    `Cree le: ${datesortie} a ${heuresortie}`,
     `Nom: ${lastname}`,
     `Prenom: ${firstname}`,
     `Naissance: ${birthday}`,

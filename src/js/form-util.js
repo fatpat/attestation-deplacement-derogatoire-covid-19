@@ -1,7 +1,8 @@
 import removeAccents from 'remove-accents'
 
 import { $, $$, downloadBlob } from './dom-utils'
-import { addSlash, getFormattedDate } from './util'
+import { addSlash, getFormattedDate, getFormattedTime } from './util'
+//import pdfBase from '../certificate.pdf'
 import { generatePdf } from './pdf-util'
 import SecureLS from 'secure-ls'
 let context = 'curfew'
@@ -78,6 +79,11 @@ function setCurrentDate (releaseDateInput) {
   releaseDateInput.value = getFormattedDate(currentDate)
 }
 
+function setCurrentTime (releaseTimeInput) {
+  const currentDate = new Date()
+  releaseTimeInput.value = getFormattedTime(currentDate)
+}
+
 function showSnackbar (snackbarToShow, showDuration = 6000) {
   snackbarToShow.classList.remove('d-none')
   setTimeout(() => snackbarToShow.classList.add('show'), 100)
@@ -95,6 +101,11 @@ export function wantDataToBeStored () {
 export function setReleaseDateTime (releaseDateInput) {
   const loadedDate = new Date()
   releaseDateInput.value = getFormattedDate(loadedDate)
+}
+
+export function setReleaseTime (releaseTimeInput) {
+  const loadedDate = new Date()
+  releaseTimeInput.value = getFormattedTime(loadedDate)
 }
 
 export function toAscii (string) {
@@ -129,7 +140,7 @@ export function getReasons (reasonInputs) {
   return reasons
 }
 
-export function prepareInputs (formInputs, reasonInputs, reasonFieldsetsWrapper, reasonAlerts, snackbar, releaseDateInput, contextWrapper) {
+export function prepareInputs (formInputs, reasonInputs, reasonFieldsetsWrapper, reasonAlerts, snackbar, releaseDateInput, releaseTimeInput, creationDateInput, creationTimeInput, contextWrapper) {
   const lsProfile = secureLS.get('profile')
 
   // Continue to store data if already stored
@@ -171,6 +182,9 @@ export function prepareInputs (formInputs, reasonInputs, reasonFieldsetsWrapper,
     clearSecureLS()
     clearForm()
     setCurrentDate(releaseDateInput)
+    setCurrentDate(creationDateInput)
+    setCurrentTime(releaseTimeInput)
+    setCurrentTime(creationTimeInput)
     showSnackbar(clearDataSnackbar, 3000)
   })
   $('#field-storedata').addEventListener('click', () => {
@@ -234,7 +248,13 @@ export function prepareForm () {
   const reasonFieldsetsWrapper = $('.fieldset-wrapper')
   const reasonAlerts = $$('.msg-alert')
   const releaseDateInput = $('#field-datesortie')
+  const creationDateInput = $('#field-creationDate')
+  const releaseTimeInput = $('#field-heuresortie')
+  const creationTimeInput = $('#field-creationHour')
   const contextWrapper = $('.context-wrapper')
   setReleaseDateTime(releaseDateInput)
-  prepareInputs(formInputs, reasonInputs, reasonFieldsetsWrapper, reasonAlerts, snackbar, releaseDateInput, contextWrapper)
+  setReleaseDateTime(creationDateInput)
+  setReleaseTime(releaseTimeInput)
+  setReleaseTime(creationTimeInput)
+  prepareInputs(formInputs, reasonInputs, reasonFieldsetsWrapper, reasonAlerts, snackbar, releaseDateInput, releaseTimeInput, creationDateInput, creationTimeInput, contextWrapper)
 }
