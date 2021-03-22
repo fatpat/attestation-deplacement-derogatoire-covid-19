@@ -61,15 +61,15 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "84ec1034f655dd7fa418be066864a2b3"
+    "revision": "d223d0d95c4d120b5c3a20a7385a8c96"
   },
   {
-    "url": "main.63f9366d.js",
-    "revision": "353d67404f7b28d0bdb1315fc6705225"
+    "url": "main.935e5a00.js",
+    "revision": "33aaf388ecb38e9d1ba24faf1b4d2e9a"
   },
   {
-    "url": "main.b139e702.css",
-    "revision": "53da009d4889017dd2a79a424826aee7"
+    "url": "main.bd900745.css",
+    "revision": "e152e8ddf9d44978b8e911c1102b16c5"
   },
   {
     "url": "marianne-bold-webfont.1505950c.woff2",
@@ -93,9 +93,9 @@ self.__precacheManifest = [
   },
   {
     "url": "./",
-    "revision": "0fd02acb6a17cc658ae33d3c4e495be4"
+    "revision": "3dafcffceb0a17d2e02d8df9a219aa59"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"));
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/covid19/index.html"));
