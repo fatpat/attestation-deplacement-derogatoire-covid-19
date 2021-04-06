@@ -48,10 +48,6 @@ self.__precacheManifest = [
     "revision": "de5e22b15cf20cb0d586a036d714ee3f"
   },
   {
-    "url": "certificate.38ba23f2.pdf",
-    "revision": "6744f70981e787bb6c1ef5134de4c93f"
-  },
-  {
     "url": "favicon-16x16.a4687270.png",
     "revision": "652605ae0182d51781ab0be639ad2bda"
   },
@@ -61,15 +57,27 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "d223d0d95c4d120b5c3a20a7385a8c96"
+    "revision": "90937ea730a8b964d0bfba8f2e9dd7e4"
   },
   {
-    "url": "main.935e5a00.js",
-    "revision": "33aaf388ecb38e9d1ba24faf1b4d2e9a"
+    "url": "Luciole-Bold-Italic.2366ca8a.ttf",
+    "revision": "256e48e0367323fcf0ae07ae5288a1ec"
   },
   {
-    "url": "main.bd900745.css",
-    "revision": "e152e8ddf9d44978b8e911c1102b16c5"
+    "url": "Luciole-Bold.e011a927.ttf",
+    "revision": "65185931286131e3d9840121099ff226"
+  },
+  {
+    "url": "Luciole-Regular-Italic.5d4a59c4.ttf",
+    "revision": "fb4e76d44c4e5e51a7acf774d62d894e"
+  },
+  {
+    "url": "Luciole-Regular.d5748b97.ttf",
+    "revision": "a7c071b53034020d1940af7e2557c976"
+  },
+  {
+    "url": "main.6df771b8.css",
+    "revision": "ddc792f30da3e716a6c5b9fa3832f186"
   },
   {
     "url": "marianne-bold-webfont.1505950c.woff2",
@@ -93,7 +101,7 @@ self.__precacheManifest = [
   },
   {
     "url": "./",
-    "revision": "3dafcffceb0a17d2e02d8df9a219aa59"
+    "revision": "6f894b3eb489209b00245950f5e8e588"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
