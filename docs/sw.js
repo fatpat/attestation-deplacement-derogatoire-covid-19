@@ -57,7 +57,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "90937ea730a8b964d0bfba8f2e9dd7e4"
+    "revision": "b68539a631c7e2471a952def44e928f4"
   },
   {
     "url": "Luciole-Bold-Italic.2366ca8a.ttf",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "revision": "a7c071b53034020d1940af7e2557c976"
   },
   {
-    "url": "main.6df771b8.css",
-    "revision": "ddc792f30da3e716a6c5b9fa3832f186"
+    "url": "main.b0223f10.css",
+    "revision": "d8ca88ed97aa79e263b8f1da4cbbd3b2"
   },
   {
     "url": "marianne-bold-webfont.1505950c.woff2",
@@ -101,7 +101,7 @@ self.__precacheManifest = [
   },
   {
     "url": "./",
-    "revision": "6f894b3eb489209b00245950f5e8e588"
+    "revision": "4b9369f2fbd7a1ac5779bbabb809becc"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
